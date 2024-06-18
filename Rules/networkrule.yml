@@ -1,0 +1,13 @@
+groups:
+  - name: test_alerts
+    rules:
+
+      - alert: HighNetworkUsage
+        expr:  irate(node_network_receive_bytes_total{device="enp0s3", instance="192.168.43.109:9100", job="prometheus"}[1m])> 1000000.00000
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High network usage,test notifications coming soon: scheduled for Monday next month"
+          description: "Network usage is high (current value: {{ $value }} bytes/s)"
+

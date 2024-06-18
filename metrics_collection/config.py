@@ -1,0 +1,9 @@
+PROMETHEUS_URL = "http://192.168.43.55:9090"
+GENAI_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+TWILIO_ACCOUNT_SID = "xxxxxxxxxxxxxyyyyyyyyyyyyyyyy"
+TWILIO_AUTH_TOKEN = "xxxxxxxxxxxxxyyyyyyyyyyyyyyyxxxxxx"
+SMTP_SERVER = "smtp.gmail.com"
+SMTP_PORT = 587
+SENDER_EMAIL = "xxxxxxxxxxxxx@gmail.com"
+RECEIVER_EMAIL = "xxxxxxxxxxxxxxx@gmail.com"
+SENDER_PASSWORD = "xxxxxxxxxxxxxxxxxx"

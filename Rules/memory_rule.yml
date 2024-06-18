@@ -1,0 +1,11 @@
+groups:
+  - name: memory_alerts
+    rules:
+    - alert: HighMemoryUsage
+      expr: (node_memory_MemTotal_bytes - node_memory_MemAvailable_bytes) / node_memory_MemTotal_bytes * 100 > 65
+      for: 1m
+      labels:
+        severity: critical
+      annotations:
+        summary: "High Memory Usage on {{ $labels.instance }}"
+        description: "Memory usage is above 65% (current value: {{ $value }}%) on instance {{ $labels.instance }}."

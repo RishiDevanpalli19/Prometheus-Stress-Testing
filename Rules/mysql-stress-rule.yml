@@ -1,0 +1,11 @@
+groups:
+- name: Mysql_Buffer_Load
+  rules:
+  - alert: MysqlBuffer
+    expr: ((mysql_global_status_innodb_buffer_pool_bytes_data / 134217728) * 100) > 80
+    for: 1m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Mysql-server {{ $labels.instance }} is overloaded"
+      description: "The instance {{ $labels.instance}} Innodb buffer pool size usage is more than 80%."
