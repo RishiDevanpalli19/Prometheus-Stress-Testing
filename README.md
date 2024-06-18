@@ -46,7 +46,7 @@ After the setup is complete, you can run the application using the following com
 ```
 **Note**: You can set the IP address of your Node Exporter in the `app.py` file. Currently, the option to specify the IP address of the machine running the script is available because stress testing must be performed on the same machine.
 
-**Note**: To receive WhatsApp notifications, create an account in [**Twilio**](https://www.twilio.com/en-us/messaging/channels/whatsapp)  and add the necessary numbers for insights and recommendations.
+**Note**: To receive WhatsApp notifications, create an account in [**Twilio**](https://www.twilio.com/en-us/messaging/channels/whatsapp)  and add the necessary numbers for insights and recommendations from Gemini API.
 ## ⚠️***Warning***
 
 This stress testing tool performs actions that may damage your computer or your Prometheus setup. Use it with caution.
