@@ -32,6 +32,7 @@ First, ensure that the script has execute permissions. You can set the permissio
 ```bash
   chmod +x shell_script.sh
 ```
+**Note**: Configure the `alertmanager.yml` for email alert and webhook, also `prometheus.yml` to add the rules(.yml) files.
 
 **Step 2**: Run `menu.py` to set up the Prometheus stress testing environment:
 ```bash
